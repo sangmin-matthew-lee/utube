@@ -1,0 +1,10 @@
+{
+  "name": "utube",
+  "version": "1.0.0",
+  "description": "Clone Youtube with JS and NodeJS",
+  "main": "index.js",
+  "author": "Sangmin Matthew Lee",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
