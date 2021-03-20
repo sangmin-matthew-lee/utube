@@ -3,13 +3,11 @@ import morgan from "morgan";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
-import { userRouter } from "./router.js"; //when object is exproted as default
+import userRouter from "./routers/userRouter.js";
+import videoRouter from "./routers/videoRouter.js";
+import globalRouter from "./routers/globalRouter.js";
 
 const app = express();
-
-const handleHome = (req,res) => res.send("Hello from home!!!");
-
-const handleProfile = (req,res) => res.send("You are on my profile");
 
 //midleware
 app.use(cookieParser());
@@ -19,10 +17,8 @@ app.use(helmet());
 app.use(morgan("dev"));
 
 //route
-app.get("/", handleHome);
-
-app.get("/profile", handleProfile);
-
-app.use("/user", userRouter)    //use = I will use whole userRouter when someone call /user
+app.use("/", globalRouter);
+app.use("/user", userRouter);    //use = I will use whole userRouter when someone call /user
+app.use("/video", videoRouter);
 
 export default app; // When someone import app file, it will give app object
