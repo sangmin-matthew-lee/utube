@@ -60,3 +60,14 @@
       ```
 
 - Routing
+
+- MVC
+
+  - Module: data
+  - View: How does the data look
+  - Control: function that looks for the data
+
+- Router
+  - globalRouter: For Homepage. Not related with anything
+  - userRouter: For user. ex: profile, log-out(?)
+  - videoRouter: For video
