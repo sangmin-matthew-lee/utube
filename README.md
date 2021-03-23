@@ -10,7 +10,7 @@
 
   ```ts
   //route the express
-  const express = require("express");
+  const express = require('express');
   const app = express();
   const PORT = 4000;
 
@@ -20,15 +20,15 @@
 
   // take request and response object which will be html and css
   function handleHome(req, res) {
-    res.send("Hello from home");
+    res.send('Hello from home');
   }
 
   function handleProfile(req, res) {
-    res.send("You are on my profile");
+    res.send('You are on my profile');
   }
 
-  app.get("/", handleHome);
-  app.get("/profile", handleProfile);
+  app.get('/', handleHome);
+  app.get('/profile', handleProfile);
   app.listen(PORT, handleListening);
   ```
 
@@ -47,7 +47,7 @@
       ```
     - In init file
       ```ts
-      import app from "./app.js";
+      import app from './app.js';
       ```
   - NOT export as default
     - In router file
@@ -56,12 +56,12 @@
       ```
     - In app file
       ```ts
-      import { userRouter } from "./router.js";
+      import { userRouter } from './router.js';
       ```
 
 - Routing
 
-- MVC
+- MVC: It is just a pattern
 
   - Module: data
   - View: How does the data look
