@@ -65,6 +65,9 @@
 
   - Module: data
   - View: How does the data look
+    - pug: nice tool to change pug to html! More easy to use
+    - All pug files in views folder are templetes!
+    - #2.17: Sending object or data from controller to View(Templetes!)
   - Control: function that looks for the data
 
 - Router
