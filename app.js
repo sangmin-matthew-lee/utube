@@ -10,6 +10,7 @@ import routes from "../utube/routes.js"
 
 const app = express();
 
+app.set("view engine", "pug");
 //midleware
 app.use(cookieParser());
 app.use(bodyParser.json());
