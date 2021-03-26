@@ -2,7 +2,9 @@ header.header
     .header__colunmn
         a(href=routes.home)
             i.fab.fa-youtube
-        
+    .header__colunmn
+        form(action=routes.search, method="get")
+            input(type="text", placeholder="Search by term", name="term")    
     .header__colunmn
         ul 
             li 
