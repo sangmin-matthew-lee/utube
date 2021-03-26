@@ -6,7 +6,7 @@ import bodyParser from "body-parser";
 import userRouter from "./routers/userRouter.js";
 import videoRouter from "./routers/videoRouter.js";
 import globalRouter from "./routers/globalRouter.js";
-import routes from "./routers/routes.js"
+import routes from "../utube/routes.js"
 
 const app = express();
 
