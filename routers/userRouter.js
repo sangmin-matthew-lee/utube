@@ -8,8 +8,8 @@ import { changePWController,
 const userRouter = express.Router();
 
 //userRouter.get(routes.users, usersController);
-userRouter.get(routes.userDetail, userDetailController);
 userRouter.get(routes.editProfile, editProfileController);
-userRouter.get(routes.changePW, changePWController);
+userRouter.get(routes.changePassword, changePWController);
+userRouter.get(routes.userDetail, userDetailController);
 
 export default userRouter;
