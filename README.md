@@ -74,3 +74,16 @@
   - globalRouter: For Homepage. Not related with anything
   - userRouter: For user. ex: profile, log-out(?)
   - videoRouter: For video
+
+  ## Pages:
+    - [ ] Home
+    - [ ] Join
+    - [ ] Login
+    - [x] Search
+    - [ ] User Detail
+    - [ ] Edit Profile
+    - [ ] Change Password
+    - [ ] Upload
+    - [ ] Video Detail
+    - [ ] Edit Video
+
