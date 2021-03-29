@@ -2,11 +2,11 @@ extends layouts/main.pug
 
 block content
     .form-container 
-        form(action=routes.editProfile, methods="post")
+        form(action=`/users${routes.editProfile}`, methods="post")
             label(for="avatar") Avater
             input(type="file", id="avatar", name="avatar")
             input(type="text", placeholder="Name", name = "name")
             input(type="text", placeholder="Email", name="email")
             input(type="submit", value="Update Profile")
-        a.form-container__link(href=routes.changePW) Change Password
+        a.form-container__link(href=`/users${routes.changePassword}`) Change Password
             
