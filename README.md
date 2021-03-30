@@ -87,3 +87,4 @@
     - [ ] Video Detail
     - [ ] Edit Video
 
+  - Mixins = Contains repeated HTML codes

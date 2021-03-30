@@ -21,6 +21,10 @@ app.use(morgan("dev"));
 
 app.use(localMiddleware)
 
+app.use(function(req, res, next) {
+    res.setHeader("Content-Security-Policy", "script-src 'self' https://archive.org");
+    return next();
+    });
 //route
 app.use(routes.home, globalRouter);
 app.use(routes.users, userRouter);    //use = I will use whole userRouter when someone call /user
