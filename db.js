@@ -1,6 +1,9 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
-mongoose.connect("mongodb://localhost:27017/u-tube", {
+mongoose.connect(
+    process.env.MONGO_URL, {
     useUnifiedTopology: true,
     useFindAndModify: false,
     useUnifiedTopology: true
