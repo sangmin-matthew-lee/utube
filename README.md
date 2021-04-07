@@ -93,5 +93,3 @@
   - Some controllers have two part -> get and post
     - get controller called before user submit info
     - post controller called after user submit info and redirct to right page
-
-test
