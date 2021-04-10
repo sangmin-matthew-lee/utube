@@ -93,3 +93,11 @@
   - Some controllers have two part -> get and post
     - get controller called before user submit info
     - post controller called after user submit info and redirct to right page
+
+  - Recap:
+    - For video detail or delete - It should be chosen by id of video, for that id of params is required in videoController.js
+    ```
+      const {
+        params: {id}
+      } = req;
+    ```
