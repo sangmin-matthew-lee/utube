@@ -101,3 +101,17 @@
         params: {id}
       } = req;
     ```
+
+    - Mongodb Commend
+      - To start MongoDB
+       ```
+       sudo service mongod start
+       ```
+      - To Stop MongoDB
+       ```
+       sudo service mongod stop
+       ```
+      - To check status of MongoDB
+       ```
+       sudo service mongod status
+       ```
